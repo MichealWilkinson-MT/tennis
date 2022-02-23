@@ -4,7 +4,11 @@ class Player {
         return this._points;
     };
     scorePoint = () => {
-        this._points = 15
+        if (this._points == 15) {
+            this._points = 30
+        } else {
+            this._points = 15
+        } 
     }
 }
 
