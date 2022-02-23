@@ -12,8 +12,7 @@ class Player {
     }
 }
 
-
-
+// Easier way to understand the tests
 
 const points = (a) => {
     if ( a == 1 ) {
