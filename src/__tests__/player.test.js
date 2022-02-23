@@ -20,6 +20,13 @@ describe('Get player points', () => {
         player.scorePoint();
         expect(player.getPoints()).toEqual(30);
     });
+
+    it('Given a player has scored 3 points, when retrieving their points, then we get 40', () => {
+        const player = new Player();
+        player.scorePoint();
+        player.scorePoint();
+        player.scorePoint();
+        expect(player.getPoints()).toEqual(40);
 });
 
  describe('Get player points', () => {
@@ -29,4 +36,10 @@ describe('Get player points', () => {
      it('Given a player has 1 points, when retrieving their points, then we get 15', () => {
          expect(points(1)).toEqual(15);
      })
- })
+     it('given a player has 2 points, when retrieving their points, then we get 30', () => {
+         expect(points(2)).toEqual(30);
+        
+     })
+     it('given a player has 3 points, when retrieving their points, then we get 40', () => {
+        expect(points(3)).toEqual(40);
+    }))
