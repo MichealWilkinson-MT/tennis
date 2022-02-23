@@ -14,12 +14,12 @@ class Player {
 
 // Easier way to understand the tests
 
-const points = (a) => {
-    if ( a == 1 ) {
+const points = (scoredPoints) => {
+    if (scoredPoints == 1 ) {
         return 15;
-    } else if ( a == 2 ) {
+    } else if (scoredPoints == 2 ) {
         return 30;
-    } else if (a == 3) {
+    } else if (scoredPoints == 3) {
         return 40;
     } else {
         return 0;
