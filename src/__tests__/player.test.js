@@ -35,3 +35,11 @@ describe('2 players', () => {
         expect(player.createPlayer()).toEqual("player1" && "player2")
     })
 })
+
+describe('Douce'), () => {
+    it('If both players have 40 score they will enter douce', () => {
+        const player = new Player();
+        expect(("player1".getPoints()).toEqual(40) && ("player2".getPoints()).toEqual(40))
+
+    })
+}
