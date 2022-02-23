@@ -26,8 +26,7 @@ describe('Get player points', () => {
         player.scorePoint();
         player.scorePoint();
         player.scorePoint();
-        //Some comment
-    
+        // Run 3 times to show that the player scorred thrice
         expect(player.getPoints()).toEqual(40);
     });
 
