@@ -26,6 +26,8 @@ describe('Get player points', () => {
         player.scorePoint();
         player.scorePoint();
         player.scorePoint();
+        //Some comment
+    
         expect(player.getPoints()).toEqual(40);
     });
 
