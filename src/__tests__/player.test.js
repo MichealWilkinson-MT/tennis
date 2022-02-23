@@ -1,5 +1,5 @@
 const {
-    Player
+    points, Player
 } = require('../player');
 
 describe('Get player points', () => {
@@ -21,3 +21,12 @@ describe('Get player points', () => {
         expect(player.getPoints()).toEqual(30);
     });
 });
+
+ describe('Get player points', () => {
+     it('Given a player has 0 points, when retrieving their points, then we get 0', () => {
+         expect(points(0)).toEqual(0);
+     })
+     it('Given a player has 1 points, when retrieving their points, then we get 15', () => {
+         expect(points(1)).toEqual(15);
+     })
+ })

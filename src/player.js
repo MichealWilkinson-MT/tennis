@@ -8,11 +8,25 @@ class Player {
             this._points = 30
         } else {
             this._points = 15
-        } 
+        }
     }
 }
 
 
+
+
+const points = (a) => {
+    if ( a == 1 ) {
+        return 15;
+    } else if ( a == 2 ) {
+        return 30;
+    } else if (a == 3) {
+        return 40;
+    } else {
+        return 0;
+    }
+}
+
 module.exports = {
-    Player
+ points, Player
 }
