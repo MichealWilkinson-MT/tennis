@@ -33,5 +33,5 @@ describe('2 players', () => {
     it('Make sure there are two different players', () => {
         const player = new Player();
         expect(player.createPlayer()).toEqual("player1" && "player2")
-    });
-describe('deuce');
+    })
+})
