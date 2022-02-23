@@ -1,0 +1,22 @@
+{
+  "name": "tennis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichealWilkinson-MT/tennis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichealWilkinson-MT/tennis/issues"
+  },
+  "homepage": "https://github.com/MichealWilkinson-MT/tennis#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
