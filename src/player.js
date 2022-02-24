@@ -14,6 +14,8 @@ class Player {
             this._points = 30
         } else if (this._points == 30){
             this._points = 40
+        } else if (this._points == 40){
+            this._points = "You Win"
         }
     }
     createPlayer = () => {
