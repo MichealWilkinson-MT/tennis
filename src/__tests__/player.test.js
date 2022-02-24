@@ -1,9 +1,6 @@
 const {
     Player
 } = require('../player');
-const {
-    Game
-} = require('../game')
 
 describe('Get player points', () => {
     it('Given a player has 0 points, when retrieving their points, then we get 0', () => {
@@ -57,10 +54,3 @@ describe('Douce', () => {
     })
 })
 
-describe('who scored', () => {
-
-    xit('Ask who scored the point, Player1 or Player2', () => {
-        const game = new Game();
-        expect(game.whoScored()).toEqual("Who Scored?")
-})
-})
