@@ -1,6 +1,9 @@
 const {
     Player
 } = require('../player');
+const {
+    Game
+} = require('../game')
 
 describe('Get player points', () => {
     it('Given a player has 0 points, when retrieving their points, then we get 0', () => {
@@ -27,6 +30,14 @@ describe('Get player points', () => {
         player.scorePoint();
         expect(player.getPoints()).toEqual(40);
     });
+    it('Given a player has scored 4 points, they win the game', () => {
+        const player = new Player
+        player.scorePoint();
+        player.scorePoint();
+        player.scorePoint();
+        player.scorePoint();
+        expect(player.getPoints()).toEqual("You Win")
+    })
 })
 
 describe('2 players', () => {
@@ -36,10 +47,18 @@ describe('2 players', () => {
     })
 })
 
-describe('Douce'), () => {
-    it('If both players have 40 score they will enter douce', () => {
+describe('Douce', () => {
+    xit('If both players have 40 score they will enter douce', () => {
         const player = new Player();
-        expect(("player1".getPoints()).toEqual(40) && ("player2".getPoints()).toEqual(40))
 
+        expect(player.playersDouce()).toEqual("Douce")
     })
-}
+})
+
+describe('who scored', () => {
+
+it('Ask who scored the point, Player1 or Player2', () => {
+        const game = new Game();
+        expect(game.whoScored()).toEqual(Console.log("Who Scored?"))
+})
+})
