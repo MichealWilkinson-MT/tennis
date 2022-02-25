@@ -1,3 +1,4 @@
+const { Game } = require('../game');
 const {
     Player
 } = require('../player');
@@ -46,11 +47,5 @@ describe('2 players', () => {
     })
 })
 
-describe('Douce', () => {
-    xit('If both players have 40 score they will enter douce', () => {
-        const player = new Player();
 
-        expect(player.playersDouce()).toEqual("Douce")
-    })
-})
 
